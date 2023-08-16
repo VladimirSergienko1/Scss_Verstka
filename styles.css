@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap");
+@font-face {
+  font-family: "NextArtRegular";
+  src: url("./fonts/NEXT ART_Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "NextArtBold";
+  src: url("./fonts/NEXT ART_Bold.otf") format("opentype");
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", serif;
+}
+
+.header {
+  width: 1920px;
+  background-image: url("./img/header-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 985px;
+}
+.header .header_container {
+  padding-top: 16px;
+  width: 1180px;
+  margin: 0 auto;
+}
+.header .header_container .nav {
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  /*  border: 1px solid black;*/
+  justify-content: space-between;
+}
+.header .header_container .nav .logo {
+  max-width: 137px;
+  flex: -1;
+}
+.header .header_container .nav .nav-row {
+  color: white;
+  font-size: 18px;
+  width: 831px;
+  display: flex;
+  /* border: 1px salmon solid;*/
+  justify-content: space-between;
+}
+.header .header_container .nav .nav-row .nav-list {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  width: 625px;
+  flex-direction: row;
+  justify-content: space-between;
+  /*  border: 1px solid red;*/
+  text-decoration: none;
+  list-style: none;
+}
+.header .header_container .nav .nav-row .btn-wrapper {
+  display: flex;
+  align-items: center;
+}
+.header .header_container .nav .nav-row .btn-wrapper .header-btn {
+  font-weight: 600;
+  font-family: "Nunito Sans", serif;
+  line-height: 20px;
+  font-size: 16px;
+  background-color: #1A3E3E;
+  color: #fff;
+  width: 157px;
+  border-radius: 4px;
+  padding: 12px 24px;
+  outline: none;
+  border: none;
+}
+.header .header_container .nav .nav-row .btn-wrapper .header-btn:active {
+  color: salmon;
+}
+.header .header-desc {
+  width: 1080px;
+  padding-top: 408px;
+  color: #FDFDFD;
+  text-transform: uppercase;
+  font-family: "NextArtBold", serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 50px;
+  line-height: 75px;
+}
+.header .header-tours {
+  width: 1180px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+}
+.header .header-tours .container {
+  width: 1095px;
+  padding: 40px 43px;
+  color: #FDFDFD;
+}
+.header .header-tours .container .container-input {
+  display: inline-flex;
+  align-items: flex-start;
+}
+.header .header-tours .container .container-input .input-item {
+  display: flex;
+  width: 270px;
+  align-items: center;
+  align-self: stretch;
+  padding: 16px;
+  margin-right: 24px;
+  border-radius: 8px;
+  color: #FDFDFD;
+  background: none;
+  border: 1px solid #E1E3E4;
+  font-family: Nunito Sans, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+}
+
+/*# sourceMappingURL=styles.css.map */
