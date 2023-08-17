@@ -109,15 +109,43 @@ body{
 
     .container{
         width: 1095px;
-        padding: 40px 43px;
+        display: flex;
+        justify-content: space-between;
+        padding: 39.5px 43px;
         color: #FDFDFD;
 
+      .btn-wrapper{
+        display: flex;
+
+        .header-btn{
+          font-weight: 600;
+          font-family: "Nunito Sans", serif;
+          line-height: 20px;
+          font-size: 16px ;
+          border-radius: 4px;
+          background: #FDFDFD;
+          color: #1A3E3E ;
+          width: 213px;
+          height: 52px;
+
+          padding: 12px 24px;
+          outline: none;
+          border: none;
+
+          &:active {
+            color: salmon;
+          }
+
+        }
+      }
 
 
       .container-input{
         display: inline-flex;
         align-items: flex-start;
 
+        .input-group{
+        }
 
         .input-item{
 
@@ -125,19 +153,37 @@ body{
           width: 270px;
           align-items: center;
           align-self: stretch;
-          padding: 16px;
+          padding: 13px;
           margin-right: 24px;
           border-radius: 8px;
           color: #FDFDFD;
-          background: none;
           border: 1px solid #E1E3E4;
-
+          margin-bottom: 8px;
           font-family: Nunito Sans, serif;
           font-size: 16px;
           font-style: normal;
           font-weight: 700;
           line-height: 150%; /* 24px */
+          -webkit-appearance: none;
+          background: url('./img/ep_arrow-down.png') no-repeat right 13px center;
+
         }
+        .calendar{
+          background: url('./img/formkit_date.png') no-repeat right 13px center;
+
+        }
+
+        .input-item-text{
+          margin-left: 8px;
+          color: #FDFDFD;
+          font-family: Nunito Sans, serif;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 21px */
+
+        }
+
       }
     }
   }
