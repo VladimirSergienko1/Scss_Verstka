@@ -279,6 +279,258 @@ body {
   min-height: 771px;
   background: #F3F5F4;
   box-sizing: border-box;
+  padding-top: 80px;
+  padding-left: 370px;
+  display: flex;
+  align-items: flex-start;
+}
+.our-offer .our-offer-container {
+  width: 580px;
+  box-sizing: border-box;
+  /*border: 1px salmon solid;*/
+  /*margin: 0 370px;*/
+  /*margin: 0 90px;*/
+}
+.our-offer .our-offer-container .our-offer-container-about {
+  color: #F2BE22;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+.our-offer .our-offer-container .our-offer-container-title {
+  color: #18121E;
+  margin-top: 8px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+}
+.our-offer .our-offer-container .our-offer-container-content {
+  color: #18121E;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 40px 0;
+  line-height: 150%;
+}
+.our-offer .our-offer-container .our-offer-container-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.our-offer .our-offer-container .our-offer-container-item .item-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #E5EEEB;
+}
+.our-offer .our-offer-container .our-offer-container-item .item-desc {
+  margin-left: 16px;
+}
+.our-offer .our-offer-container .our-offer-container-item .item-desc .item-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  color: #18121E;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 111.111% */
+  letter-spacing: 0.216px;
+}
+.our-offer .our-offer-container .our-offer-container-item .item-desc .item-content {
+  color: #000;
+  margin: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+.our-offer .our-offer-container .btn-wrapper {
+  display: flex;
+  align-items: center;
+}
+.our-offer .our-offer-container .btn-wrapper .desc-btn {
+  display: flex;
+  color: #FDFDFD;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+  padding: 16px 36px;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: #1A3E3E;
+}
+.our-offer .our-offer-container .btn-wrapper .desc-btn:active {
+  color: salmon;
+}
+.our-offer .our-offer-images {
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin-right: 100px;
+  display: flex;
+  width: 510px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-left: 90px;
+}
+.our-offer .our-offer-images img:nth-child(1),
+.our-offer .our-offer-images img:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.popular-routes {
+  width: 1920px;
+  min-height: 898px;
+  background: #FFF;
+  box-sizing: border-box;
+  padding-top: 80px;
+}
+.popular-routes .popular-routes-container {
+  width: 1180px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.popular-routes .popular-routes-container .popular-routes-container-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*margin: 0 auto;
+  width: 580px;*/
+}
+.popular-routes .popular-routes-container .popular-routes-container-title .popular-routes-version {
+  margin: 0 0 8px 0;
+  color: #F2BE22;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 83.333% */
+}
+.popular-routes .popular-routes-container .popular-routes-container-title .popular-routes-popular {
+  margin: 0 0 50px 0;
+  color: #18121E;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 38.4px */
+}
+.popular-routes .popular-routes-container .popular-routes-container-tours {
+  display: flex;
+  justify-content: space-between;
+}
+.popular-routes .popular-routes-container .popular-routes-container-tours .img-wrapper {
+  display: block;
+  position: relative;
+  width: 380px;
+  height: 500px;
+}
+.popular-routes .popular-routes-container .popular-routes-container-tours .img-wrapper .img-badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 32px;
+  top: 50px;
+  right: 0;
+  border-radius: 4px 0 0 4px;
+  background: rgba(253, 253, 253, 0.4);
+  backdrop-filter: blur(2px);
+}
+.popular-routes .popular-routes-container .popular-routes-container-tours .img-wrapper .img-badge .score {
+  color: #1A3E3E;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  font-family: Nunito Sans, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 128.571% */
+}
+.popular-routes .popular-routes-container .popular-routes-container-tours .img-wrapper .img-wrapper-bottom {
+  position: absolute;
+  width: 380px;
+  height: 90px;
+  border-radius: 0 0 32px 32px;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+}
+.popular-routes .popular-routes-container .popular-routes-container-tours .img-wrapper .img-wrapper-bottom .img-wrapper-desc {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 153px 41px 32px;
+  /*padding: 20px 153px 41px 32px;*/
+}
+.popular-routes .popular-routes-container .popular-routes-container-tours .img-wrapper .img-wrapper-bottom .img-wrapper-desc .img-wrapper-desc-title {
+  color: #FDFDFD;
+  margin: 0;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+}
+.popular-routes .popular-routes-container .popular-routes-container-tours .img-wrapper .img-wrapper-bottom .img-wrapper-desc .img-wrapper-desc-desc {
+  color: #FDFDFD;
+  margin: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+}
+.popular-routes .popular-routes-container .popular-routes-container-tours .img-wrapper .img-wrapper-bottom .img-wrapper-desc .img-wrapper-bottom-cost {
+  position: absolute;
+  right: 32px;
+  top: 25px;
+  display: inline-flex;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #FDFDFD;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+}
+.popular-routes .popular-routes-container .btn-wrapper {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+.popular-routes .popular-routes-container .btn-wrapper .desc-btn {
+  display: flex;
+  color: #FDFDFD;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+  padding: 16px 36px;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: #1A3E3E;
+}
+.popular-routes .popular-routes-container .btn-wrapper .desc-btn:active {
+  color: salmon;
 }
 
 /*# sourceMappingURL=styles.css.map */
