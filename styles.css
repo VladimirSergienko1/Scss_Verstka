@@ -535,7 +535,7 @@ body {
 
 .travel-blog {
   width: 1920px;
-  min-height: 898px;
+  min-height: 1036px;
   background: #F3F5F4;
   box-sizing: border-box;
   padding-top: 80px;
@@ -572,9 +572,222 @@ body {
 }
 .travel-blog .travel-blog-container .blog-posts-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 1180px;
-  background-color: red;
+  /*height: 1000px;*/
+}
+.travel-blog .travel-blog-container .blog-posts-container .blog-posts-item {
+  box-sizing: border-box;
+  /* max-height: 312px;*/
+  display: flex;
+  justify-content: space-between;
+  width: 580px;
+  border-radius: 10px;
+  background: #FDFDFD;
+  padding: 16px;
+}
+.travel-blog .travel-blog-container .blog-posts-container .blog-posts-item:nth-child(1), .travel-blog .travel-blog-container .blog-posts-container .blog-posts-item:nth-child(2) {
+  margin-bottom: 24px;
+}
+.travel-blog .travel-blog-container .blog-posts-container .blog-posts-item .item-image {
+  width: 230px;
+  height: 280px;
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+.travel-blog .travel-blog-container .blog-posts-container .blog-posts-item .item-text-container {
+  width: 294px;
+  display: flex;
+  padding: 16px 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.travel-blog .travel-blog-container .blog-posts-container .blog-posts-item .item-text-container .item-title {
+  color: #18121E;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+}
+.travel-blog .travel-blog-container .blog-posts-container .blog-posts-item .item-text-container .item-desc {
+  height: 116px;
+  /*   min-height: 140px;*/
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+.travel-blog .travel-blog-container .blog-posts-container .blog-posts-item .item-text-container .item-text-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.travel-blog .travel-blog-container .blog-posts-container .blog-posts-item .item-text-container .item-text-bottom .item-text-date {
+  color: #F2BE22;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+}
+.travel-blog .travel-blog-container .blog-posts-container .blog-posts-item .item-text-container .item-text-bottom .item-text-read {
+  color: #1A3E3E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+}
+.travel-blog .travel-blog-container .btn-wrapper {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+.travel-blog .travel-blog-container .btn-wrapper .desc-btn {
+  display: flex;
+  color: #FDFDFD;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+  padding: 16px 36px;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: #1A3E3E;
+}
+.travel-blog .travel-blog-container .btn-wrapper .desc-btn:active {
+  color: salmon;
+}
+
+.photo-report {
+  width: 1920px;
+  min-height: 1006px;
+  background: #FFF;
+  box-sizing: border-box;
+  padding-top: 80px;
+}
+.photo-report .photo-report-container {
+  width: 1180px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.photo-report .photo-report-container .photo-report-container-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  /*margin: 0 auto;
+  width: 580px;*/
+}
+.photo-report .photo-report-container .photo-report-container-title .photo-report-title {
+  margin: 0 0 8px 0;
+  color: #F2BE22;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 83.333% */
+}
+.photo-report .photo-report-container .photo-report-container-title .photo-report-subtitle {
+  margin: 0 0 40px 0;
+  color: #18121E;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 38.4px */
+}
+.photo-report .photo-report-container .photos-container {
+  box-sizing: border-box;
+  width: 1180px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.photo-report .photo-report-container .photos-container .item-image {
+  display: flex;
+}
+.photo-report .photo-report-container .photos-container .item-image:nth-child(1), .photo-report .photo-report-container .photos-container .item-image:nth-child(2), .photo-report .photo-report-container .photos-container .item-image:nth-child(3) {
+  margin-bottom: 20px;
+}
+.photo-report .btn-wrapper {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+.photo-report .btn-wrapper .desc-btn {
+  display: flex;
+  color: #FDFDFD;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+  padding: 16px 36px;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: #1A3E3E;
+}
+.photo-report .btn-wrapper .desc-btn:active {
+  color: salmon;
+}
+
+.footer {
+  width: 1920px;
+  height: 587px;
+  flex-shrink: 0;
+  background: #1A3E3E;
+}
+.footer .mailing {
+  position: relative;
+  top: -98px;
+  margin: 0 auto;
+  width: 1180px;
+  height: 196px;
+  border-radius: 6px;
+  background: #FDFDFD;
+  box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.12);
+}
+.footer .mailing .actual {
+  padding: 40px 700px 66px 100px;
+  display: flex;
+  width: 380px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.footer .mailing .actual .actual-title {
+  color: #F2BE22;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 111.111% */
+}
+.footer .mailing .actual .actual-subtitle {
+  color: #18121E;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 31.2px */
+}
+.footer .mailing .emailing-block {
+  display: inline-flex;
+  align-items: flex-end;
+  width: 536px;
+  gap: 16px;
+}
+.footer .mailing .emailing-block .emailing-block-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 /*# sourceMappingURL=styles.css.map */
