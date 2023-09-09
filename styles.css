@@ -75,6 +75,10 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  transition: 0.3s ease-in-out;
+}
+.header .header_container .nav .nav-row .nav-list a:hover {
+  color: #F2BE22;
 }
 .header .header_container .nav .nav-row .nav-list a:active {
   color: #F2BE22;
@@ -94,7 +98,14 @@ body {
   border-radius: 4px;
   padding: 12px 24px;
   outline: none;
-  border: none;
+  box-sizing: border-box;
+  border: 1px solid #1A3E3E;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.header .header_container .nav .nav-row .btn-wrapper .header-btn:hover {
+  color: #1A3E3E;
+  background-color: #FFFFFF;
 }
 .header .header_container .nav .nav-row .btn-wrapper .header-btn:active {
   color: salmon;
@@ -139,9 +150,16 @@ body {
   color: #1A3E3E;
   width: 213px;
   height: 52px;
+  cursor: pointer;
   padding: 12px 24px;
   outline: none;
-  border: none;
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  transition: 0.3s ease-in-out;
+}
+.header .header-tours .container .btn-wrapper .header-btn:hover {
+  color: #FFFFFF;
+  background-color: #1A3E3E;
 }
 .header .header-tours .container .btn-wrapper .header-btn:active {
   color: salmon;
@@ -168,6 +186,7 @@ body {
   line-height: 150%; /* 24px */
   -webkit-appearance: none;
   background: url("./img/ep_arrow-down.png") no-repeat right 13px center;
+  cursor: pointer;
 }
 .header .header-tours .container .container-input .calendar {
   background: url("./img/formkit_date.png") no-repeat right 13px center;
@@ -277,9 +296,16 @@ body {
   justify-content: center;
   align-items: center;
   outline: none;
-  border: none;
   border-radius: 4px;
   background: #1A3E3E;
+  box-sizing: border-box;
+  border: 1px solid #1A3E3E;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.about .section-container .desc-container .btn-wrapper .desc-btn:hover {
+  color: #1A3E3E;
+  background-color: #FFFFFF;
 }
 .about .section-container .desc-container .btn-wrapper .desc-btn:active {
   color: salmon;
@@ -379,9 +405,16 @@ body {
   justify-content: center;
   align-items: center;
   outline: none;
-  border: none;
   border-radius: 4px;
   background: #1A3E3E;
+  box-sizing: border-box;
+  border: 1px solid #1A3E3E;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.our-offer .our-offer-container .btn-wrapper .desc-btn:hover {
+  color: #1A3E3E;
+  background-color: #FFFFFF;
 }
 .our-offer .our-offer-container .btn-wrapper .desc-btn:active {
   color: salmon;
@@ -536,9 +569,16 @@ body {
   justify-content: center;
   align-items: center;
   outline: none;
-  border: none;
   border-radius: 4px;
   background: #1A3E3E;
+  box-sizing: border-box;
+  border: 1px solid #1A3E3E;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.popular-routes .popular-routes-container .btn-wrapper .desc-btn:hover {
+  color: #1A3E3E;
+  background-color: #FFFFFF;
 }
 .popular-routes .popular-routes-container .btn-wrapper .desc-btn:active {
   color: salmon;
@@ -667,9 +707,16 @@ body {
   justify-content: center;
   align-items: center;
   outline: none;
-  border: none;
   border-radius: 4px;
   background: #1A3E3E;
+  box-sizing: border-box;
+  border: 1px solid #1A3E3E;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.travel-blog .travel-blog-container .btn-wrapper .desc-btn:hover {
+  color: #1A3E3E;
+  background-color: #FFFFFF;
 }
 .travel-blog .travel-blog-container .btn-wrapper .desc-btn:active {
   color: salmon;
@@ -742,9 +789,16 @@ body {
   justify-content: center;
   align-items: center;
   outline: none;
-  border: none;
   border-radius: 4px;
   background: #1A3E3E;
+  box-sizing: border-box;
+  border: 1px solid #1A3E3E;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.photo-report .btn-wrapper .desc-btn:hover {
+  color: #1A3E3E;
+  background-color: #FFFFFF;
 }
 .photo-report .btn-wrapper .desc-btn:active {
   color: salmon;
@@ -810,6 +864,7 @@ body {
   background: #1A3E3E;
   margin-left: 0;
   align-self: flex-end;
+  cursor: pointer;
   color: #FDFDFD;
   font-family: Nunito Sans;
   font-size: 16px;
@@ -817,6 +872,13 @@ body {
   font-weight: 600;
   line-height: 20px; /* 125% */
   letter-spacing: 0.192px;
+  box-sizing: border-box;
+  border: 1px solid #1A3E3E;
+  transition: 0.3s ease-in-out;
+}
+.footer .mailing .emailing-block .emailing-block-input-container .desc-btn:hover {
+  color: #1A3E3E;
+  background-color: #FFFFFF;
 }
 .footer .mailing .emailing-block .emailing-block-input-container .flex-box {
   display: flex;
@@ -919,6 +981,11 @@ body {
   font-weight: 400;
   line-height: 18px; /* 128.571% */
   width: 263px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.footer .footer-content .our-services .service-item:hover {
+  color: #F2BE22;
 }
 .footer .footer-content .our-services .service-item img {
   margin-right: 10px;

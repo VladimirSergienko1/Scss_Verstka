@@ -79,6 +79,11 @@ body {
           font-style: normal;
           font-weight: 600;
           line-height: normal;
+          transition: .3s ease-in-out;
+
+          &:hover{
+            color: #F2BE22;
+          }
 
           &:active{
             color: #F2BE22;
@@ -103,7 +108,15 @@ body {
           border-radius: 4px;
           padding: 12px 24px;
           outline: none;
-          border: none;
+          box-sizing: border-box;
+          border: 1px solid #1A3E3E;
+          transition: .3s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            color: #1A3E3E;
+            background-color: #FFFFFF;
+          }
 
           &:active {
             color: salmon;
@@ -160,9 +173,17 @@ body {
           width: 213px;
           height: 52px;
 
+          cursor: pointer;
           padding: 12px 24px;
           outline: none;
-          border: none;
+          box-sizing: border-box;
+          border: 1px solid #FFFFFF;
+          transition: .3s ease-in-out;
+
+          &:hover {
+            color: #FFFFFF;
+            background-color: #1A3E3E;
+          }
 
           &:active {
             color: salmon;
@@ -198,7 +219,7 @@ body {
           line-height: 150%; /* 24px */
           -webkit-appearance: none;
           background: url('./img/ep_arrow-down.png') no-repeat right 13px center;
-
+          cursor: pointer;
         }
         .calendar{
           background: url('./img/formkit_date.png') no-repeat right 13px center;
@@ -324,10 +345,17 @@ body {
           justify-content: center;
           align-items: center;
           outline: none;
-          border: none;
           border-radius: 4px;
           background: #1A3E3E;
+          box-sizing: border-box;
+          border: 1px solid #1A3E3E;
+          transition: .3s ease-in-out;
+          cursor: pointer;
 
+          &:hover {
+            color: #1A3E3E;
+            background-color: #FFFFFF;
+          }
           &:active {
             color: salmon;
           }
@@ -442,10 +470,17 @@ body {
         justify-content: center;
         align-items: center;
         outline: none;
-        border: none;
         border-radius: 4px;
         background: #1A3E3E;
+        box-sizing: border-box;
+        border: 1px solid #1A3E3E;
+        transition: .3s ease-in-out;
+        cursor: pointer;
 
+        &:hover {
+          color: #1A3E3E;
+          background-color: #FFFFFF;
+        }
         &:active {
           color: salmon;
         }
@@ -616,9 +651,17 @@ body {
         justify-content: center;
         align-items: center;
         outline: none;
-        border: none;
         border-radius: 4px;
         background: #1A3E3E;
+        box-sizing: border-box;
+        border: 1px solid #1A3E3E;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          color: #1A3E3E;
+          background-color: #FFFFFF;
+        }
 
         &:active {
           color: salmon;
@@ -759,9 +802,17 @@ body {
         justify-content: center;
         align-items: center;
         outline: none;
-        border: none;
         border-radius: 4px;
         background: #1A3E3E;
+        box-sizing: border-box;
+        border: 1px solid #1A3E3E;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          color: #1A3E3E;
+          background-color: #FFFFFF;
+        }
 
         &:active {
           color: salmon;
@@ -843,9 +894,17 @@ body {
       justify-content: center;
       align-items: center;
       outline: none;
-      border: none;
       border-radius: 4px;
       background: #1A3E3E;
+      box-sizing: border-box;
+      border: 1px solid #1A3E3E;
+      transition: .3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        color: #1A3E3E;
+        background-color: #FFFFFF;
+      }
 
       &:active {
         color: salmon;
@@ -915,6 +974,7 @@ body {
           background: #1A3E3E;
           margin-left: 0;
           align-self: flex-end;
+          cursor: pointer;
 
           color: #FDFDFD;
           font-family: Nunito Sans;
@@ -923,6 +983,14 @@ body {
           font-weight: 600;
           line-height: 20px; /* 125% */
           letter-spacing: 0.192px;
+          box-sizing: border-box;
+          border: 1px solid #1A3E3E;
+          transition: .3s ease-in-out;
+
+          &:hover {
+            color: #1A3E3E;
+            background-color: #FFFFFF;
+          }
         }
 
         .flex-box{
@@ -1037,11 +1105,18 @@ body {
         font-weight: 400;
         line-height: 18px; /* 128.571% */
         width: 263px;
+        transition: .3s ease-in-out;
+        cursor: pointer ;
+
+        &:hover{
+          color: #F2BE22;
+        }
 
         img{
           margin-right: 10px;
         }
       }
+
     }
 
   }
