@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700&family=PT+Sans:ital@1&family=Roboto+Flex:opsz@8..144&display=swap');
+
 @font-face {
   font-family: "NextArtRegular";
   src: url("./fonts/NEXT ART_Regular.otf") format("opentype");
@@ -9,6 +11,17 @@
   font-family: "NextArtBold";
   src: url("./fonts/NEXT ART_Bold.otf") format("opentype");
 }
+//general styles
+.underline{
+  color: #18121E;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  text-decoration-line: underline;
+}
+
 
 body {
   margin: 0;
@@ -849,21 +862,24 @@ body {
 
   .mailing {
     position: relative;
+    display: flex;
     top: -98px;
     margin: 0 auto;
-    width: 1180px;
-    height: 196px;
+    width: 1140px;
     border-radius: 6px;
     background: #FDFDFD;
     box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.12);
+    padding: 40px 0 40px 40px;
 
     .actual {
-      padding: 40px 700px 66px 100px;
+      /*padding: 40px 700px 66px 100px;*/
       display: flex;
       width: 380px;
       flex-direction: column;
       align-items: flex-start;
       gap: 8px;
+      margin-left: 60px;
+      margin-right: 64px;
 
       .actual-title {
         color: #F2BE22;
@@ -879,20 +895,179 @@ body {
         font-style: normal;
         font-weight: 800;
         line-height: 120%; /* 31.2px */
+        width: 380px;
       }
     }
     .emailing-block {
-      display: inline-flex;
       align-items: flex-end;
-      width: 536px;
+      /*width: 536px;*/
       gap: 16px;
 
       .emailing-block-input-container {
         display: flex;
-        flex-direction: column;
         align-items: flex-start;
-        gap: 8px;
+        gap: 16px;
+        .desc-btn{
+          padding: 12px 24px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 4px;
+          background: #1A3E3E;
+          margin-left: 0;
+          align-self: flex-end;
+
+          color: #FDFDFD;
+          font-family: Nunito Sans;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 20px; /* 125% */
+          letter-spacing: 0.192px;
+        }
+
+        .flex-box{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 8px;
+        /*  width: 536px;*/
+
+          .emeil-text{
+            margin: 0;
+
+
+          }
+          .email-input{
+            width: 280px;
+            box-sizing: border-box;
+            height: 44px;
+            padding: 0 16px;
+            align-items: center;
+
+            border-radius: 4px;
+            background: #F3F5F4;
+            border: none;
+          }
+
+
+
+        }
+
+      }
+      .email-subtext{
+        width: 536px;
+        color: #18121E;
+        font-family: Nunito Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18px; /* 128.571% */
+        margin-top: 8px;
+        margin-bottom: 0;
       }
     }
   }
+  .footer-content{
+    width: 1180px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    .company{
+      display: flex;
+      flex-direction: column;
+      .title{
+        color: #F3F5F4;
+        font-family: Nunito Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 120% */
+        margin-bottom: 17px;
+      }
+      .subtitle{
+        color: var(--white-color-100, #FFF);
+        font-family: Nunito Sans;
+        width: 456px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        margin-bottom: 80px;
+      }
+      .contacts{
+        display: flex;
+        gap: 24px;
+        margin-bottom: 32px;
+        span{
+          color: #FFF;
+          font-family: Nunito Sans;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 18px; /* 128.571% */
+          text-decoration-line: underline;
+        }
+
+      }
+      .links{
+        display: flex;
+        gap: 16px;
+        margin-bottom: 80px;
+      }
+    }
+    .our-services{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .title{
+        color: #F3F5F4;
+        font-family: Nunito Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 120% */
+        margin-bottom: 4px;
+      }
+      .service-item{
+        color: #FDFDFD;
+        font-family: Nunito Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px; /* 128.571% */
+        width: 263px;
+
+        img{
+          margin-right: 10px;
+        }
+      }
+    }
+
+  }
+  .footer-line{
+    width: 100%;
+    height: 66px;
+    background: #18121E;
+    display: flex;
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 1180px;
+
+      .text{
+        color: #FFF;
+        font-family: Nunito Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18px; /* 128.571% */
+      }
+    }
+  }
+
+
+
 }
